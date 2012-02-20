@@ -1,11 +1,11 @@
 # This is the compiler to use
 CC=g++
-# This is for Windows
-FLAGS=-I "C:\Program Files (x86)\MPICH2\include" -L "C:\Program Files (x86)\MPICH2\lib" -lmpi
+# The output directory
 OUTPUT_DIR=output
-
-# This is for Linux
-#CFLAGS=-c -Wall -I "C:\Program Files (x86)\MPICH2\include" -L "C:\Program Files (x86)\MPICH2\lib" -lmpi
+# The Compiler Flags for Windows
+FLAGS=-I "C:\Program Files (x86)\MPICH2\include" -L "C:\Program Files (x86)\MPICH2\lib" -lmpi
+# The Compiler Flags for Linux
+#FLAGS=-I "/usr/include/mpich2/" -L "/usr/lib" -lmpich
 
 all: example01.exe example02.exe example03.exe example04.exe example05.exe example06.exe example07.exe example08.exe example09.exe example10.exe example11.exe example12.exe example13.exe example14.exe example15.exe example16.exe 
 
